@@ -1,0 +1,6 @@
+@starkare_backend_HostAddress = http://localhost:5129
+
+GET {{starkare_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
