@@ -18,6 +18,17 @@ namespace starkare_backend.Models
         [Required]
         public byte[] PasswordSalt { get; set; } // Extra security
 
+        [Required]
+        public double BodyWeight { get; set; }
+
+        [Required]
+        public int Age { get; set; }
+
+        [Required]
+        public bool IsMale { get; set; }
+
+        public int AgeExperience { get; set; } // How many years have the user been working out for? Will be used for beginner/advanced status
+
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }
